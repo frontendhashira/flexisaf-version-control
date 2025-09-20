@@ -1,170 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Version Control</title>
-    <link rel="stylesheet" href="./dist/styles.css" />
-  </head>
-  <body>
-    <div class="container">
-      <header class="header">
-        <h1 class="header__title">Version Control Git</h1>
-      </header>
 
-      <main>
-        <!-- Project Overview -->
-        <section class="card">
-          <h2 class="card__title">Git Operations Demonstrated</h2>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Version Control</title>
+      <link rel="stylesheet" href="./dist/styles.css" />
+   </head>
 
-          <div class="stats">
-            <div class="stat-item">
-              <span class="stat-number">15+</span>
-              <div class="stat-label">Git Commands</div>
-            </div>
-            <div class="stat-item">
-              <span class="stat-number">8</span>
-              <div class="stat-label">Branches Created</div>
-            </div>
-            <div class="stat-item">
-              <span class="stat-number">25+</span>
-              <div class="stat-label">Commits Made</div>
-            </div>
-            <div class="stat-item">
-              <span class="stat-number">5</span>
-              <div class="stat-label">Pull Requests</div>
-            </div>
-          </div>
+   <body>
+      <div class="container">
+         <header class="header">
+            <h1 class="header__title">Version Control Git</h1>
+         </header>
 
-          <div class="skills-grid">
-            <div class="skill-card">
-              <h3>Repository Setup</h3>
-              <p>Creating repositories, cloning repositories, connecting remotes</p>
-            </div>
-            <div class="skill-card">
-              <h3>Branch Operations</h3>
-              <p>Creating branches, switching branches, merging, renaming branches</p>
-            </div>
-            <div class="skill-card">
-              <h3>Commit Management</h3>
-              <p>Committing changes, reverting commits, managing commit history</p>
-            </div>
-            <div class="skill-card">
-              <h3>Remote Operations</h3>
-              <p>Pulling and pushing changes upstream/downstream, fetching updates</p>
-            </div>
-          </div>
-        </section>
+         <main>
+            <!-- Project Overview -->
+            <section class="card">
+               <h2 class="card__title">Git Operations Demonstrated</h2>
 
-        <!-- Core Git Commands -->
-        <section class="card">
-          <h2 class="card__title">Git Commands Mastered</h2>
+               <div class="stats">
+                  <div class="stat-item">
+                     <span class="stat-number">15+</span>
+                     <div class="stat-label">Git Commands</div>
+                  </div>
+                  <div class="stat-item">
+                     <span class="stat-number">8</span>
+                     <div class="stat-label">Branches Created</div>
+                  </div>
+                  <div class="stat-item">
+                     <span class="stat-number">25+</span>
+                     <div class="stat-label">Commits Made</div>
+                  </div>
+                  <div class="stat-item">
+                     <span class="stat-number">5</span>
+                     <div class="stat-label">Pull Requests</div>
+                  </div>
+               </div>
 
-          <div class="step">
-            <h4>1. Repository Creation & Cloning</h4>
-            <div class="command-demo">
-              <span class="command-line comment"># Creating new repository</span>
-              <span class="command-line">git init flexisaf-version-control</span>
-              <span class="command-line">cd flexisaf-version-control/span>
-              <span class="command-line">echo "# Git Learning Project" > README.md</span>
-              <span class="command-line">git add README.md</span>
-              <span class="command-line">git commit -m "Initial commit"</span>
-              <span class="command-line"></span>
-              <span class="command-line comment"># Cloning repository</span>
-              <span class="command-line">git clone git@github.com:frontendhashira/flexisaf-version-control.git</span>
-            </div>
-          </div>
+               <div class="skills-grid">
+                  <div class="skill-card">
+                     <h3>Repository Setup</h3>
+                     <p>Creating repositories, cloning repositories, connecting remotes</p>
+                  </div>
+                  <div class="skill-card">
+                     <h3>Branch Operations</h3>
+                     <p>Creating branches, switching branches, merging, renaming branches</p>
+                  </div>
+                  <div class="skill-card">
+                     <h3>Commit Management</h3>
+                     <p>Committing changes, reverting commits, managing commit history</p>
+                  </div>
+                  <div class="skill-card">
+                     <h3>Remote Operations</h3>
+                     <p>Pulling and pushing changes upstream/downstream, fetching updates</p>
+                  </div>
+               </div>
+            </section>
 
-          <div class="step">
-            <h4>2. Branch Operations</h4>
-            <div class="command-demo">
-              <span class="command-line comment"># Creating and switching branches</span>
-              <span class="command-line">git branch feature/html-structure</span>
-              <span class="command-line">git switch feature/html-structure</span>
-              <span class="command-line">git switch -c feature/css-styling</span>
-              <span class="command-line"></span>
-              <span class="command-line comment"># Managing branches</span>
-              <span class="command-line">git branch -a # List all branches</span>
-              <span class="command-line">git branch -m old-name new-name # Rename</span>
-              <span class="command-line">git branch -d feature-name # Delete branch</span>
-            </div>
-          </div>
+            <!-- Core Git Commands -->
+            <section class="card">
+               <h2 class="card__title">Git Commands Mastered</h2>
 
-          <div class="step">
-            <h4>3. Committing & Reverting</h4>
-            <div class="command-demo">
-              <span class="command-line comment"># Staging and committing</span>
-              <span class="command-line">git add index.html</span>
-              <span class="command-line">git add .</span>
-              <span class="command-line">git commit -m "feat: add homepage structure"</span>
-              <span class="command-line">git commit -am "fix: update existing files"</span>
-              <span class="command-line"></span>
-              <span class="command-line comment"># Reverting commits</span>
-              <span class="command-line">git revert HEAD</span>
-              <span class="command-line">git reset --soft HEAD~1</span>
-              <span class="command-line">git reset --hard HEAD~1</span>
-            </div>
-          </div>
+               <div class="step">
+                  <h3>1. Repository Creation & Cloning</h3>
+                  <div class="command-demo">
+                     <span class="command-line comment"># Creating new repository</span>
+                     <span class="command-line">git init flexisaf-version-control</span>
+                     <span class="command-line">cd flexisaf-version-control/span>
+                        <span class="command-line">echo "# Git Learning Project" > README.md</span>
+                        <span class="command-line">git add README.md</span>
+                        <span class="command-line">git commit -m "Initial commit"</span>
+                        <span class="command-line"></span>
+                        <span class="command-line comment"># Cloning repository</span>
+                        <span class="command-line">git clone git@github.com:frontendhashira/flexisaf-version-control.git</span>
+                  </div>
+               </div>
 
-          <div class="step">
-            <h4>4. Remote Operations (Upstream/Downstream)</h4>
-            <div class="command-demo">
-              <span class="command-line comment"># Setting up remote</span>
-              <span class="command-line">git remote add origin https://github.com/frontendhashira/flexisaf-version-control.git</span>
-              <span class="command-line">git remote -v # View remotes</span>
-              <span class="command-line"></span>
-              <span class="command-line comment"># Pushing upstream</span>
-              <span class="command-line">git push origin main</span>
-              <span class="command-line">git push -u origin feature/new-feature</span>
-              <span class="command-line">git push --all # Push all branches</span>
-              <span class="command-line"></span>
-              <span class="command-line comment"># Pulling downstream</span>
-              <span class="command-line">git pull origin main</span>
-              <span class="command-line">git fetch origin</span>
-              <span class="command-line">git fetch --all</span>
-            </div>
-          </div>
+               <div class="step">
+                  <h4>2. Branch Operations</h4>
+                  <div class="command-demo">
+                     <span class="command-line comment"># Creating and switching branches</span>
+                     <span class="command-line">git branch feature/html-structure</span>
+                     <span class="command-line">git switch feature/html-structure</span>
+                     <span class="command-line">git switch -c feature/css-styling</span>
+                     <span class="command-line"></span>
+                     <span class="command-line comment"># Managing branches</span>
+                     <span class="command-line">git branch -a # List all branches</span>
+                     <span class="command-line">git branch -m old-name new-name # Rename</span>
+                     <span class="command-line">git branch -d feature-name # Delete branch</span>
+                  </div>
+               </div>
 
-          <div class="step">
-            <h4>5. Merging & Pull Requests</h4>
-            <div class="command-demo">
-              <span class="command-line comment"># Merging branches</span>
-              <span class="command-line">git checkout main</span>
-              <span class="command-line">git merge feature/html-structure</span>
-              <span class="command-line">git merge --no-ff feature/css-styling</span>
-              <span class="command-line"></span>
-              <span class="command-line comment"># Handling conflicts</span>
-              <span class="command-line">git status # Check conflict files</span>
-              <span class="command-line"># Edit files to resolve conflicts</span>
-              <span class="command-line">git add resolved-file.txt</span>
-              <span class="command-line">git commit -m "resolve: merge conflicts"</span>
-            </div>
-          </div>
-        </section>
+               <div class="step">
+                  <h4>3. Committing & Reverting</h4>
+                  <div class="command-demo">
+                     <span class="command-line comment"># Staging and committing</span>
+                     <span class="command-line">git add index.html</span>
+                     <span class="command-line">git add .</span>
+                     <span class="command-line">git commit -m "feat: add homepage structure"</span>
+                     <span class="command-line">git commit -am "fix: update existing files"</span>
+                     <span class="command-line"></span>
+                     <span class="command-line comment"># Reverting commits</span>
+                     <span class="command-line">git revert HEAD</span>
+                     <span class="command-line">git reset --soft HEAD~1</span>
+                     <span class="command-line">git reset --hard HEAD~1</span>
+                  </div>
+               </div>
 
-        <!-- Live Git History -->
-        <section class="card">
-          <h2 class="card__title">Actual Git History</h2>
-          <p>This is what my git log actually shows for this project:</p>
+               <div class="step">
+                  <h4>4. Remote Operations (Upstream/Downstream)</h4>
+                  <div class="command-demo">
+                     <span class="command-line comment"># Setting up remote</span>
+                     <span class="command-line">git remote add origin https://github.com/frontendhashira/flexisaf-version-control.git</span>
+                     <span class="command-line">git remote -v # View remotes</span>
+                     <span class="command-line"></span>
+                     <span class="command-line comment"># Pushing upstream</span>
+                     <span class="command-line">git push origin main</span>
+                     <span class="command-line">git push -u origin feature/new-feature</span>
+                     <span class="command-line">git push --all # Push all branches</span>
+                     <span class="command-line"></span>
+                     <span class="command-line comment"># Pulling downstream</span>
+                     <span class="command-line">git pull origin main</span>
+                     <span class="command-line">git fetch origin</span>
+                     <span class="command-line">git fetch --all</span>
+                  </div>
+               </div>
 
+               <div class="step">
+                  <h4>5. Merging & Pull Requests</h4>
+                  <div class="command-demo">
+                     <span class="command-line comment"># Merging branches</span>
+                     <span class="command-line">git checkout main</span>
+                     <span class="command-line">git merge feature/html-structure</span>
+                     <span class="command-line">git merge --no-ff feature/css-styling</span>
+                     <span class="command-line"></span>
+                     <span class="command-line comment"># Handling conflicts</span>
+                     <span class="command-line">git status # Check conflict files</span>
+                     <span class="command-line"># Edit files to resolve conflicts</span>
+                     <span class="command-line">git add resolved-file.txt</span>
+                     <span class="command-line">git commit -m "resolve: merge conflicts"</span>
+                  </div>
+               </div>
+            </section>
 
-        </section>
+            <!-- Live Git History -->
+            <section class="card">
+               <h2 class="card__title">Actual Git History</h2>
+               <p>This is what my git log actually shows for this project:</p>
 
-        <!-- Project Links -->
-        <section class="links-section">
-          <h2 style="color: white; border-bottom: 3px solid white; margin-bottom: 1rem">Project Links</h2>
-          <p>View my complete Git & GitHub implementation:</p>
+               <div class="command-demo">
+                  <ul class="commit-log">
+                     <li>
+                        * commit 058d1219b429a91f76056ab6ddac78e069dcca08 (HEAD -> main, origin/main, origin/HEAD)<br>
+                        | Merge: 622b525 01f1a7e<br>
+                        | Author: frontendhashira &lt;ridwanyinusa9@gmail.com&gt;<br>
+                        | Date: Sat Sep 20 14:24:27 2025 +0100<br>
+                        |<br>
+                        | Merge pull request #1 from frontendhashira/commit-operations<br>
+                        |<br>
+                        | feat: add homepage with all assets
+                     </li>
+                     <li>
+                        * commit 01f1a7e83d47bc43e3c8c3c33258efe32e608c99 (origin/commit-operations, commit-operations)<br>
+                        | Author: ridwan &lt;ridwanyinusa15@gmail.com&gt;<br>
+                        | Date: Sat Sep 20 14:20:07 2025 +0100<br>
+                        |<br>
+                        | feat: add homepage with all assets
+                     </li>
+                     <li>
+                        * commit 622b525311faf77d64a74b5524a5529440416f5b (feature/command-demo)<br>
+                        |\ Merge: 68b5f9b a8ce0ec<br>
+                        | Author: ridwan &lt;ridwanyinusa15@gmail.com&gt;<br>
+                        | Date: Sat Sep 20 14:10:36 2025 +0100<br>
+                        |<br>
+                        | Merge branch 'feature/javascript-functionality'
+                     </li>
+                     <li>
+                        * commit 68b5f9b786c29356ce5a8ff71b0fbc388d99cc50<br>
+                        |\ Merge: 87acfc1 e21f929<br>
+                        | Author: ridwan &lt;ridwanyinusa15@gmail.com&gt;<br>
+                        | Date: Sat Sep 20 14:09:46 2025 +0100<br>
+                        |<br>
+                        | Merge branch 'feature/css-styling'
+                     </li>
+                     <li>
+                        * commit a8ce0eca28fe2f120d42ed6024c05c958998faae (origin/feature/javascript-functionality, feature/javascript-functionality)<br>
+                        | Author: ridwan &lt;ridwanyinusa15@gmail.com&gt;<br>
+                        | Date: Sat Sep 20 14:05:44 2025 +0100<br>
+                        |<br>
+                        | feat: Implement scroll animation for card elements on page load
+                     </li>
+                     <li>
+                        * commit e21f929defaa5f64ffa8b9f26e3c5e5df95f1623 (origin/feature/css-styling, feature/css-styling)<br>
+                        | Author: ridwan &lt;ridwanyinusa15@gmail.com&gt;<br>
+                        | Date: Sat Sep 20 14:02:21 2025 +0100<br>
+                        |<br>
+                        | refactor: Refactor styles.scss to use SCSS variables for colors and improve styling structure
+                     </li>
+                     <li>
+                        * commit 87acfc18053b41c95493254aeb6d8beda77d2c1d (origin/feature/html-structure, feature/html-structure)<br>
+                        | Author: ridwan &lt;ridwanyinusa15@gmail.com&gt;<br>
+                        | Date: Sat Sep 20 13:58:19 2025 +0100<br>
+                        |<br>
+                        | feat: Enhance index.html with structured content and Git command demonstrations
+                     </li>
+                     <li>
+                        * commit d3d5d3d023003d7949730985c2d876dcca9a9e59<br>
+                        | Author: ridwan &lt;ridwanyinusa15@gmail.com&gt;<br>
+                        | Date: Sat Sep 20 12:14:47 2025 +0100<br>
+                        |<br>
+                        | Add initial files: app.js, index.html, and styles.scss
+                     </li>
+                     <li>
+                        * commit 2ff074d3848fcff5a17a38987b2d25f017670352<br>
+                        Author: frontendhashira &lt;ridwanyinusa9@gmail.com&gt;<br>
+                        Date: Sat Sep 20 12:05:09 2025 +0100<br>
+                        <br>
+                        Initial commit
+                     </li>
+                  </ul>
+               </div>
+            </section>
+            <!-- Project Links -->
+            <section class="links-section">
+               <h2 style="color: white; border-bottom: 3px solid white; margin-bottom: 1rem">Project Links</h2>
+               <p>View my complete Git & GitHub implementation:</p>
 
-          <div style="margin-top: 2rem">
-            <a href="https://github.com/frontendhashira/flexisaf-version-control" class="link-button" target="_blank">GitHub Repository </a>
-            <a href="https://github.com/frontendhashira/flexisaf-version-control/commits/main/" class="link-button" target="_blank">Commit History </a>
-            <a href="https://github.com/frontendhashira/flexisaf-version-control/branches" class="link-button" target="_blank">All Branches </a>
-            <a href="https://github.com/frontendhashira/flexisaf-version-control/pulls" class="link-button" target="_blank">Pull Requests </a>
-          </div>
-        </section>
-      </main>
-    </div>
+               <div style="margin-top: 2rem">
+                  <a href="https://github.com/frontendhashira/flexisaf-version-control" class="link-button" target="_blank">GitHub Repository </a>
+                  <a href="https://github.com/frontendhashira/flexisaf-version-control/commits/main/" class="link-button" target="_blank">Commit History </a>
+                  <a href="https://github.com/frontendhashira/flexisaf-version-control/branches" class="link-button" target="_blank">All Branches </a>
+                  <a href="https://github.com/frontendhashira/flexisaf-version-control/pulls" class="link-button" target="_blank">Pull Requests </a>
+               </div>
+            </section>
+         </main>
+      </div>
 
-    <script src="./app.js"></script>
-  </body>
+      <script src="./app.js"></script>
+   </body>
+
 </html>
