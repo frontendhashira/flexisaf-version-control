@@ -33,6 +33,14 @@ body {
   background-color: $bgColor;
 }
 
+ul,
+ol,
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
 .container {
   max-width: 900px;
   margin: 0 auto;
